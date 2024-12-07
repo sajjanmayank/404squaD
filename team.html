@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404squaD</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #3b8d99, #6b6b83);
+      color: #fff;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin-top: 30px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+      margin: 30px auto;
+      max-width: 1200px;
+    }
+
+    .member-card {
+      background: linear-gradient(145deg, #fff, #e3e3e3);
+      border-radius: 15px;
+      width: 250px;
+      padding: 20px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      color: #333;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .member-card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin: 0 auto;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+      border: 3px solid #007bff;
+    }
+
+    .member-card h3 {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 15px 0 10px;
+    }
+
+    .member-card a {
+      text-decoration: none;
+      color: #007bff;
+    }
+
+    .linkedin-logo {
+      width: 24px;
+      margin-top: 10px;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+      display: inline-block;
+    }
+
+    /* Hover Effect */
+    .member-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .member-card:hover img {
+      transform: scale(1.1);
+    }
+
+    .member-card:hover .linkedin-logo {
+      transform: scale(1.2);
+      opacity: 0.9;
+    }
+
+    /* Back Button */
+    .back-button {
+      display: inline-block;
+      margin: 20px 0;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 25px;
+      font-size: 16px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: #0056b3;
+      transform: scale(1.05);
+    }
+
+    /* Footer Styling */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      font-size: 14px;
+      margin-top: auto;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .member-card {
+        width: 200px;
+        padding: 15px;
+      }
+
+      .member-card img {
+        width: 80px;
+        height: 80px;
+      }
+
+      .member-card h3 {
+        font-size: 18px;
+      }
+
+      .linkedin-logo {
+        width: 20px;
+      }
+
+      .back-button {
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 32px;
+      }
+
+      .container {
+        gap: 10px;
+      }
+
+      .member-card {
+        width: 180px;
+        padding: 10px;
+      }
+
+      .member-card img {
+        width: 70px;
+        height: 70px;
+      }
+
+      .member-card h3 {
+        font-size: 16px;
+      }
+
+      .linkedin-logo {
+        width: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2><b>404squaD</b></h2>
+  
+  <a href="index.html" class="back-button">Back to Home</a>
+
+  <div class="container">
+    <!-- Member 1 -->
+    <div class="member-card">
+      <img src="insha.jpeg" alt="Insha">
+      <h3>Insha Shahnawaz</h3>
+      <a href="www.linkedin.com/in/insha-shahnawaz-645221295" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn Logo" class="linkedin-logo">
+      </a>
+    </div>
+    
+    <!-- Member 2 -->
+    <div class="member-card">
+      <img src="isha.jpeg" alt="Isha">
+      <h3>Isha Bhandari</h3>
+      <a href="www.linkedin.com/in/isha-bhandari-b473b732a" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn Logo" class="linkedin-logo">
+      </a>
+    </div>
+    
+    <!-- Member 3 -->
+    <div class="member-card">
+      <img src="jeetesh.jpeg" alt="Jeetesh">
+      <h3>Jeetesh Kumar Thakur</h3>
+      <a href="https://www.linkedin.com/in/member3" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn Logo" class="linkedin-logo">
+      </a>
+    </div>
+    
+    <!-- Member 4 -->
+    <div class="member-card">
+      <img src="mayank.jpeg" alt="Mayank">
+      <h3>Mayank Gopal Wanjari</h3>
+      <a href="https://www.linkedin.com/in/mayankgopalwanjari/" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn Logo" class="linkedin-logo">
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    © 2024 404squaD
+  </footer>
+
+</body>
+</html>
